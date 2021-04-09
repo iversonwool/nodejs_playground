@@ -5,8 +5,9 @@ console.log('start');
 const fs = require('fs');
 const http = require('http');
 
-fs.readFile('./5G&V2X_L3与L2层协议1.0(1).xlsx', {encoding: 'utf-8'}, (err, data) => {
+fs.readFile('../README.md', {encoding: 'utf-8'}, (err, data) => {
   if (err) { throw err; }
+  console.log('file data', data)
   console.log('read file success')
 })
 
