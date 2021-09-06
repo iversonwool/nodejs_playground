@@ -22,8 +22,10 @@ process.nextTick(() => {
 })
 
 const server = http.createServer(function (req, res) {
-  res.write('hello world!');
-  res.end();
+  // res.write('hello world!');
+  res.statusCode = 200
+  res.setHeader('Content-Type', 'text/plain')
+  res.end('hello world!');
 })
 
 server.listen(4000, () => {
