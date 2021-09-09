@@ -1,0 +1,15 @@
+{
+  "name": "FirstSystem",
+  "version": "1.0.0",
+  "description": "使用koa实现下面5个接口",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1"
+  }
+}
