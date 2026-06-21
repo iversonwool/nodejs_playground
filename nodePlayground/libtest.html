@@ -6,11 +6,14 @@
   <title>Document</title>
 </head>
 <body>
-  <div id=""></div>
-  <script src="./lib/index.js"></script>
+  <img id="imageSrc" width="300"></img>
+  <h3 id="dog"></h3>
+  <script src="./lib/animal-api.js"></script>
   <script>
+    console.log('animalapi', AnimalApi)
     AnimalApi.default.getDog().then(res => {
-      console.log('res', res)
+      document.getElementById('imageSrc').src = res.imageSrc
+      document.getElementById('dog').innerText = res.text
     })
   </script>
 </body>
